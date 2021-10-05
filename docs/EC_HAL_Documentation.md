@@ -118,6 +118,34 @@ GPIO_mode(GPIOA, 5, OUTPUT);
 
 
 
+### GPIO_pupdr\(\)
+
+Configures  GPIO pin modes: In/Out/AF/Analog
+
+```c++
+void GPIO_pupdr(GPIO_TypeDef* Port, int pin, int pudr);
+```
+
+**Parameters**
+
+* **Port:**  Port Number,  GPIOA~GPIOH
+* **pin**:  pin number (int) 0~15
+* **pudr**:   No Pullup Pulldown (0), Pull-Up (1),  Pull-Down(02), 
+
+
+
+**Example code**
+
+```c++
+GPIO_mode(GPIOA, 5, OUTPUT);
+```
+
+------
+
+
+
+
+
 ## Class or Header name
 
 ### Function Name
@@ -136,3 +164,20 @@ GPIO_mode(GPIOA, 5, OUTPUT);
 ```text
 
 ```
+
+
+
+
+
+`ecGPIO.h`
+
+```c
+void main(void){
+
+}
+```
+
+1. Number list 1
+2. Number list 2
+   1. number list sub 1
+   2. 
